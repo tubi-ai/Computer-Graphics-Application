@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div class="sidebar">
+            <button onclick="handleClicked('Cursor')">Cursor</button>
+            <button onclick="handleClicked('Dot')">Dot</button>
+            <button onclick="handleClicked('Point')">Point</button>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Line</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <button onclick="handleClicked('Line Segment')">Line Segment</button>
+                    <button onclick="handleClicked('DDA')">DDA</button>
+                    <button onclick="handleClicked('Bresenham')">Bresenham</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction1()" class="dropbtn">Curve</button>
+                <div id="my2Dropdown" class="dropdown-content">
+                    <button onclick="handleClicked('Circle')">Circle</button>
+                    <button onclick="handleClicked('Ellipse')">Ellipse</button>
+                    <button onclick="handleClicked('Bezier')">Bezier Curve</button>
+                </div>
+            </div>
+            <button onclick="handleClicked('Clipping')">Clipping</button>
+            <button onclick="handleClicked('ClippingMove')">Move Clipping</button>
+            <button onclick="handleClicked('Clear')" >Clear</button>
+            <p>Note:For Cliping, need to push buton1 and drag,then release it </p>
+            <p id="selected" style="display:block;position:absolute;bottom: 0px;" >Selected:</p>
+
+        </div>
+
+        <div class="content">
+
+            <canvas style="position:absolute;z-index:-1;background-color: rgb(142, 222, 240);" id="canvas1" height="695" width="1015"></canvas>
+            <canvas style="position:absolute;z-index:1;" id="canvas2" height="695" width="1015"></canvas>
+            <div style="display:block;position:absolute;bottom: 0px;">
+                <h4>Computer Graphics CS451</h4>
+                <p> Tuğba Karalar Enginel</p>
+                <p>Student ID: 200202002</p>
+
+            </div>
+
+        </div>
+
+    </body>
+    <script src="script.js">
+
+    </script>
+</html>

@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #afbfff;
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar button {
+    display: block;
+    color: black;
+    background-color: #afbfff;
+    padding: 16px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.sidebar .dropdown{
+    display: block;
+    color: black;
+    background-color: #101114;
+    text-decoration: none;
+    width: 100%;
+}
+.sidebar input{
+    display: block;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 10px;
+}
+.sidebar button:hover:not(.active) {
+    background-color: #624466;
+    color: rgb(158, 128, 128);
+}
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+.dropbtn {
+    background-color: #b990f2;
+    color: rgb(132, 106, 106);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {background-color: #a370e5;}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content button:hover {background-color: #ddd;}
+.show {display:block;}
